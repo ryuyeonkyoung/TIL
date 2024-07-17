@@ -1,0 +1,20 @@
+7/9
+float의 정밀도 - 32비트, 정밀도가 약 7자리
+
+7/10
+@ModelAttribute
+
+7/12
+의존성 주입 중 생성자 주입 - 개체의 불변성 확보, 순환 의존성 방지
+entity(model, 데이터베이스용) <-> dto(view-controller전송용)
+dto를 사용하면 필요한 데이터만 보낼 수 있음, 보안강봐, mvc패턴
+양방향이 아니여서 순환참조문제 해결 가능
+repository - 데이터베이스 연산을 수행하는 인터페이스
+
+7/16(화)
+model객체 - controller에서 뷰로 데이터를 전송할때 쓰인다.
+(mvc구조에서의 model과는 약간 다름)
+return한 뷰 이름으로 데이터가 전달된다.
+model.addAttribute
+Thymeleaf - <tr th:each="board: ${boardList}"><td th:text="${board.id}"></td>
+${변수참조}, @{url}, *{템플릿 유틸리티}
