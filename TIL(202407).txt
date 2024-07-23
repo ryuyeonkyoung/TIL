@@ -54,3 +54,29 @@ Thymeleaf는 HTML 파일을 서버에서 동적으로 처리하여 클라이언�
 
 알고리즘 문제 풀 때 예외를 처리한다고 코드부터 바로 작성하지 말기
 예외가 될만한 테스트케이스 먼저 적어두고 테스트를 통과시킨다는 느낌으로
+
+7/23(화)
+<form enctype="속성값"> - 인코딩 방식
+application/x-www-form-urlencoded -  기본. 파일이 없는 폼(모든 문자는 인코딩됨)
+multipart/form-data - 파일이 포함된 폼(모든 문자를 인코딩하지 않음)
+text/plain - 인코딩x. 개발용
+
+@ManyToOne(fetch = FetchType.LAZY)
+@JoinColumn(name = "board_id") // 외래키
+private BoardEntity boardEntity;
+
+1. 다대일 관계
+@ManyToOne - BoardFileEntity. 기본이 즉시 로딩(EAGER)
+@OneToMany - BoardEntity. 기본이 지연 로딩(LAZY)
+LAZY Fetch - 엔티티에 접근해야 쿼리실행
+Eager Fetch - 조회 여부와 상관없이 쿼리실행
+
+2. 외래키
+기본키 - 테이블에서 각 레코드를 고유하게 식별하는 열. 중복x
+외래키 - 테이블간 연결. 연결성과 무결성
+
+주인 엔티티(외래키)와 부모 엔티티(상속)는 다를 수 있다.
+부모, 자식 엔티티 - 상속의존도를 통해 정해짐
+주인 엔티티 - 어떤 엔티티가 삽입, 수정, 삭제를 담당할 지를 통해 정해짐
+보통 many쪽이 외래키를 가짐
+(여기서는 BoardFileEntity가 외래키를 가지고 있음.)
