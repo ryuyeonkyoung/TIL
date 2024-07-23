@@ -18,3 +18,39 @@ return한 뷰 이름으로 데이터가 전달된다.
 model.addAttribute
 Thymeleaf - <tr th:each="board: ${boardList}"><td th:text="${board.id}"></td>
 ${변수참조}, @{url}, *{템플릿 유틸리티}
+
+7/17(수)
+entity - 데이터베이스의 테이블에 해당하는 객체
+DTO - 데이터 전송 객체. 목적에 따라 필드 조정 가능
+repository - 데이터베이스와 상호작용하는 인터페이스. JpaRepository인터페이스 확장
+view - 보여지는 부분, html, thymeleaf등의 템플릿엔진 사용
+controller(비즈니스 로직 미포함)
+HTTP의 요청을 받아 Service에 데이터 처리를 요청하고, 그 결과를 view로 전달
+service(비즈니스 로직 포함)
+dto <-> entity
+Controller에서 받은 요청 처리, Repository를 통해 데이터 접근 관리
+여러개의 controller에서 공유되는 로직을 중앙 집중화
+>재사용성과 유지보수성을 높임
+
+entity와 DTO
+Entity는 데이터베이스의 테이블과 매핑되어 직접적으로 데이터를 표현하고, 
+DTO는 데이터 전송을 목적으로 특정한 데이터 필드만 포함하여 최적화된 데이터 전송을 지원합니다.
+Controller와 Service
+Controller는 요청의 라우팅과 응답의 생성을 담당하며,
+비즈니스 로직은 Service에서 처리합니다.
+
+HTML이 프로그래밍 언어가 아닌 이유 - 데이터 가공 불가능
+@Transactional - 원자성을 띔(하나라도 실패하면 롤백). Service레이어에서 많이 사용
+@Query - JPQL을 사용하여 엔티티 객체를 대상으로 쿼리를 정의.
+nativeQuery를 이용하면 일반적인 쿼리문 사용 가능
+
+7/22(월)
+alt + insert : 생성 키
+paging
+1. BoardController에서는 전달해야 할 정보를 model에 담아서 paging.html에 전송
+2. BoardService에서는 데이터베이스에서 entity를 받아서 dto로 변환
+[[${page}]] - Thymeleaf 템플릿 변수를 JavaScript 변수에 할당
+Thymeleaf는 HTML 파일을 서버에서 동적으로 처리하여 클라이언트에게 필요한 최종 HTML을 제공하는 강력한 도구
+
+알고리즘 문제 풀 때 예외를 처리한다고 코드부터 바로 작성하지 말기
+예외가 될만한 테스트케이스 먼저 적어두고 테스트를 통과시킨다는 느낌으로
