@@ -105,6 +105,7 @@ max_count = Collections.max(map.values());
 Lazy Loading된 데이터에 접근하기 위해서는 @Transactional이 필수적
 트랜잭션이 열려 있는 동안에만 Lazy Loaded 데이터에 접근가능
 
+최대값 구하기
 max_count = Collections.max(map.values());
 
 map의 순회
@@ -130,3 +131,9 @@ for (String key : map.keySet()) {
 for (Integer value : map.values()) {
     System.out.println("Value: " + value);
 }
+
+java.lang.string이 정수 형태로 표현된 경우 int로 변환
+Integer.parseInt()
+
+float은 소수점 이하 약 7자리의 정밀도를 가지므로
+계산시 오차가 발생가능
