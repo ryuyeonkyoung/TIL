@@ -80,3 +80,53 @@ Eager Fetch - 조회 여부와 상관없이 쿼리실행
 주인 엔티티 - 어떤 엔티티가 삽입, 수정, 삭제를 담당할 지를 통해 정해짐
 보통 many쪽이 외래키를 가짐
 (여기서는 BoardFileEntity가 외래키를 가지고 있음.)
+
+BufferedWriter는 문자열만 출력 가능
+>Integer.toString(int) - 정수형을 문자열로 변환
+
+2차원 배열 정렬
+1. Override compare
+
+7/24(수)
+@JoinColumn(name = "board_id")
+private BoardEntity boardEntity;
+>> PK 값으로 설정하면 외래키(board_id)를 수동으로 설정
+>> 엔티티 객체를 설정 - 객체지향적
+
+BoardEntity boardEntity = BoardEntity.toSaveFileEntity(boardDTO); // dto -> entity. db에 저장하기 전이라 id값이 없다.
+Long savedId = boardRepository.save(boardEntity).getId(); // 엔티티를 데이터베이스에 저장하고, 생성된 기본 키 값을 얻음
+BoardEntity board = boardRepository.findById(savedId).get(); // 1에서 저장된 기본 키를 사용하여 엔티티를 다시 조회
+	
+자바에서 + 연산자를 사용하면 자동으로 타입 변환이 된다
+ex) bw.write(arr[0] + "\n")
+
+max_count = Collections.max(map.values());
+
+Lazy Loading된 데이터에 접근하기 위해서는 @Transactional이 필수적
+트랜잭션이 열려 있는 동안에만 Lazy Loaded 데이터에 접근가능
+
+max_count = Collections.max(map.values());
+
+map의 순회
+// Java 8 forEach 메소드 사용
+map.forEach((key, value) -> {
+    System.out.println("Key: " + key + ", Value: " + value);
+});
+
+// Entry Set을 사용한 순회
+for (Map.Entry<String, Integer> entry : map.entrySet()) {
+    String key = entry.getKey();
+    Integer value = entry.getValue();
+    System.out.println("Key: " + key + ", Value: " + value);
+}
+
+// Key 순회
+for (String key : map.keySet()) {
+    Integer value = map.get(key);
+    System.out.println("Key: " + key + ", Value: " + value);
+}
+
+// Value 순회
+for (Integer value : map.values()) {
+    System.out.println("Value: " + value);
+}
