@@ -137,3 +137,12 @@ Integer.parseInt()
 
 float은 소수점 이하 약 7자리의 정밀도를 가지므로
 계산시 오차가 발생가능
+
+
+7/25(목)
+const writer = document.getElementById("commentWriter").value;
+commentWriter한테 쿼리를 받아옴
+
+List<CommentEntity> findAllByBoardEntityOOrderByIdDesc(BoardEntity boardEntity);
+>>쿼리메소드
+쿼리 - 데이터베이스에 대해 수행할 작업을 정의하는 명령문
