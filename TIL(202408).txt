@@ -1,0 +1,10 @@
+8/6
+queue.add(new int[]{i, Integer.parseInt(st.nextToken())});
+>>new int[]{};로 배열 초기화
+
+char[] charArray = br.readLine().toCharArray();
+list.toArray(list)
+Arrays.asList(array)
+>>collect(Collectors.toList())와 달리 수정 불가능
+
+BigInteger

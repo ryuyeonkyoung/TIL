@@ -146,3 +146,7 @@ commentWriter한테 쿼리를 받아옴
 List<CommentEntity> findAllByBoardEntityOOrderByIdDesc(BoardEntity boardEntity);
 >>쿼리메소드
 쿼리 - 데이터베이스에 대해 수행할 작업을 정의하는 명령문
+
+7/26(금)
+let - 블록 스코프,변수 재선언 방지
+var - 함수 스코프,변수 재선언 가능 
