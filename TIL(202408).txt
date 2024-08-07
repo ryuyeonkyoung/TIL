@@ -1,4 +1,4 @@
-8/6
+8/6(화)
 queue.add(new int[]{i, Integer.parseInt(st.nextToken())});
 >>new int[]{};로 배열 초기화
 
@@ -7,4 +7,28 @@ list.toArray(list)
 Arrays.asList(array)
 >>collect(Collectors.toList())와 달리 수정 불가능
 
-BigInteger
+BigInteger 클래스
+BigInteger bi1 = new BigInteger("12345678901234567890");
+BigInteger bi2 = BigInteger.valueOf(1234567890);
+
+BigInteger sum = bi1.add(bi2);         // 덧셈
+BigInteger difference = bi1.subtract(bi2);  // 뺄셈
+BigInteger product = bi1.multiply(bi2);     // 곱셈
+BigInteger quotient = bi1.divide(bi2);      // 나눗셈
+BigInteger remainder = bi1.remainder(bi2);  // 나머지
+
+int comparison = bi1.compareTo(bi2);   // bi1이 bi2보다 크면 양수, 작으면 음수, 같으면 0
+boolean isEqual = bi1.equals(bi2);     // bi1과 bi2가 같은 값인지 여부
+
+
+
+8/7(수)
+Set
+빠른 조회와 삽입: 요소의 순서가 중요하지 않고 빠른 성능이 필요한 경우 HashSet.
+정렬된 순서 유지: 요소를 정렬된 순서로 유지해야 하는 경우 TreeSet.
+삽입 순서 유지: 요소의 삽입 순서를 유지해야 하는 경우 LinkedHashSet.
+
+비트 연산
+|= 현재 변수의 값에 비트 OR 연산을 적용하여 결과를 변수에 다시 저장합니다.
+&= 현재 변수의 값에 비트 AND 연산을 적용하여 결과를 변수에 다시 저장합니다.
+^= 현재 변수의 값에 비트 XOR 연산을 적용하여 결과를 변수에 다시 저장합니다.
