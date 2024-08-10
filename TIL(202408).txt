@@ -114,3 +114,37 @@ userid == null ? true : userid.equals("")
 
 내장객체: 선언없이 바로 사용가능
 클래스: 객체를 만들어야함
+
+8/10(토)
+Permutation(순열)
+1. 백트래킹
+- DFS, 재귀를 통해 구현한다.
+- dept 인수를 통해 DFS 구현하기
+- 중복된 순열을 방지하려면 visited를 사용해 백트래킹하기
+if (!visited[i])
+{
+	visited[i] = true;
+	// Recursion
+	visitied[i] = false;
+}
+2. 전체길이가 아닌 특정 길이의 순열을 생성하고 싶다면 out배열 사용하기
+out[dept] = arr[i];
+3. 전체코드
+public static void permute(int[] arr, int[] out, boolean[] visited, int dept) {
+	int n = arr.length;
+	if (dept == out.length) {
+		// out 배열 출력
+	} else {
+		for (int i = dept; i < arr.length; i++) {
+			if (!visited[i]) {
+				visited[i] = true;
+				out[dept] = arr[i];
+				// 다음 요소에 대해 재귀적으로 순열 생성
+				permute(arr, out, visited, dept + 1);
+				visited[i] = false; // 백트래킹
+			}
+		}
+	}
+}
+
+Arrays.setAll(arr, i -> i + 1);
