@@ -148,3 +148,14 @@ public static void permute(int[] arr, int[] out, boolean[] visited, int dept) {
 }
 
 Arrays.setAll(arr, i -> i + 1);
+
+자바 빈즈(java bean)
+태그의 종류 :useBean, setProperty, getProperty
+<jsp:useBean id="score" class="javabean.GradeBean" scope="page" />
+<jsp:setProperty name="score" property="name" param = "name" />
+<jsp:getProperty name="score" property="name" />
+
+name - 객체의 이름
+property - 객체의 필드
+param - request.getParameter메소드고 
+scope - 자바빈이 영향을 끼치는 범위
