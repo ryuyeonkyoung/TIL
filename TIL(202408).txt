@@ -159,3 +159,19 @@ name - 객체의 이름
 property - 객체의 필드
 param - request.getParameter메소드고 
 scope - 자바빈이 영향을 끼치는 범위
+
+8/12
+
+JDBC: 저수준 API
+
+드라이버: 하드웨어와 소프트웨어의 상호작용을 도움
+API: 소프트웨어와 소프트웨어의 상호작용을 도움. 웹에서는 사용자가 서버랑 데이터를 주고받는 방법
+드라이버 
+
+PreparedStatement
+1. SQL의 재사용, 쿼리 파라미터를 동적으로 설정
+2. SQL 인젝션의 방지
+PreparedStatement pstmt = con.prepareStatement("SELECT * FROM students WHERE age > ?");
+?는 자리표시자
+pstmt.setInt(1, name); // 1번째 ?에 name을 설정
+ResultSet result = pstmt.executeQuery();
