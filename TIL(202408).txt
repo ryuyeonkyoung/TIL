@@ -160,7 +160,7 @@ property - 객체의 필드
 param - request.getParameter메소드고 
 scope - 자바빈이 영향을 끼치는 범위
 
-8/12
+8/11(일)
 
 JDBC: 저수준 API
 
