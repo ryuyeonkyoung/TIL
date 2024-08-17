@@ -175,3 +175,39 @@ PreparedStatement pstmt = con.prepareStatement("SELECT * FROM students WHERE age
 ?는 자리표시자
 pstmt.setInt(1, name); // 1번째 ?에 name을 설정
 ResultSet result = pstmt.executeQuery();
+
+8/12(월)
+
+자바빈즈 - 데이터를 표현하는(필드를 가진) 객체. JSP에서 <jsp:useBean> 액션태그를 통해 접근 가능.
+JDBC -  Java와 데이터베이스를 연결해주는 저수준API. SQL구문을 실행한다.
+모든 작업을 수동으로 처리해 반복적인 코드작성이 필요하다.
+MyBatis - JDBC의 반복 작업을 간소화해주는 고수준 프레임워크.
+SQL 쿼리와 Java 객체 간의 매핑을 자동화한다.
+
+Stream
+
+:: 메소드 참조
+1. 정적 메소드 참조: 정적 메소드 참조. 인스턴스 없어도 됨. 주로 데이터 변환
+ .map(Integer::parseInt) 
+2. 인스턴스 메소드 참조: 특정 객체에 대해 호출됨
+.map(processor::toUpperCase)
+3. 특정 객체의 인스턴스 메소드 참조: 특정 객체의 메소드 참조
+.map(prefix::concat) 
+4. 생성자 참조: 생성자를 참조하여 새로운 객체 생성
+.map(Person::new)
+
+8/17(토)
+자바빈즈: JSP에서 클래스를 정의하고 사용하기 위한 Java객체
+JSTL: JSP에서 자주 사용되는 태그로 더 간결하게 자바 코드를 구현할 수 있음.
+JSTL 기본 문법
+
+RequestDispatcher
+현재 request에 담긴 정보를 저장하고 있다가
+다음 페이지나 다다음 페이지에서도 해당 정보를 볼 수 있게 함.
+
+서블릿
+<servlet> - 서블릿 정의
+<context-param> - 모든 서블릿에서 사용할 수 있는 초기화 매개변수 만들기
+servlet-mapping - 특정한 url패턴이 오면 해당 서블릿 적용
+filter - 필터를 정의
+filter-mapping - 특정 url패턴에서 필터 적용
