@@ -211,3 +211,21 @@ RequestDispatcher
 servlet-mapping - 특정한 url패턴이 오면 해당 서블릿 적용
 filter - 필터를 정의
 filter-mapping - 특정 url패턴에서 필터 적용
+
+8/18(일)
+컴파일언어: 컴파일 후 실행. 속도빠름
+인터프리터언어: 실시간으로 실행. 속도느림
+
+IP: 순서 미보장, 비연결 지향, 데이터 전달 미보증
+TCP: 순서 보장, 연결 지향, 데이터 전달 보증
+* UDP는 IP에서 PORT+체크섬 정도만 추가
+* 최적화가 가능하다는 점 때문에 HTTP/3의 QUIC 프로토콜은 UDP를 기반으로 한다.
+
+TCP 3-way handshake
+1. SYN (Synchronize) 패킷 전송
+2. SYN-ACK (Synchronize-Acknowledge) 패킷 응답
+3. ACK (Acknowledge) 패킷 응답
+클라이언트 코드 - Socket socket = new Socket(serverAddress, port);
+서버 코드 - Socket clientSocket = serverSocket.accept();
+
+uri = url(location) + urn(name)
