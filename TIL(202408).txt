@@ -229,3 +229,34 @@ TCP 3-way handshake
 서버 코드 - Socket clientSocket = serverSocket.accept();
 
 uri = url(location) + urn(name)
+
+Stateful: 서버 확장이 어려울 수 있음
+Stateless: 서버 확장이 용이
+
+8/19(월)
+Map<Integer, Integer> map = new HashMap<>();
+HashMap<Integer, Integer> map = new HashMap<>();
+>> Map 인터페이스로 정의하면, 코드를 더 유연하게 만들 수 있다. (인터페이스 기반 프로그래밍)
+
+트리의 종류
+HashMap: 키-값 쌍을 저장하며, 키의 순서를 보장하지 않는다. O(log 1)
+TreeMap: 키를 자동으로 정렬하여 저장한다. O(log n)
+LinkedHashMap:  삽입된 순서를 유지하면 저장한다.
+concurrentHashMap: 스레드 안정성을 보장한다.
+
+IOC 제어의 역전
+원래 고수준 모듈은 저수준 모듈에 의존해야 했는데,
+중간에 추상화를 통해 이 의존을 역전시킨 것이다. 이러면 반대로 저수준 모듈이 프레임워크에 의존하게 된다.
+
+8/21(수)
+dfs/bfs에서 간선의 구현 - 리스트 안의 리스트로 구현
+
+for-each문에서, collection이 비어있다면 아무 작업도 하지 않고 종료된다.
+(그냥 넘어가지 if문 필요없음)
+
+Entity: 데이터베이스 테이블과 매핑되는 클래스. 데이터베이스의 데이터를 객체로 변환하는 역할.
+DTO: 데이터 전송 객체. 계층 간에 데이터 전송을 효율적으로 관리하고, 데이터의 부분적 가공이나 필터링을 담당.
+DAO: 데이터 접근 객체. 데이터베이스에 대한 CRUD 작업을 처리하고, Entity와 데이터베이스 간의 상호작용을 관리.
+(DAO는 JPARepository를  상속받아서 사용해본 적 있음.)
+
+Entry point - 프로그램 실행의 시작 지점. 자바에서는 이 역할을 main메소드가 수행함
