@@ -268,4 +268,14 @@ Entry point - 프로그램 실행의 시작 지점. 자바에서는 이 역할�
 메모이제이션: 하향식. 재귀 이용
 타뷸레이션: 상향식. for문 이용해서 다 구해놓는거
 
-RESTful API
+AOP 관점 지향 프로그래밍 - 주요 기능과 부가 기능을 분리
+
+@RequiredArgsConstructor // lombok. final이나 @NonNull이 붙은 필드에 대해 생성자 자동생성
+`@Controller`: 클래스가 컨트롤러 역할을 하도록 지정합니다.
+`@RequestMapping`: default 경로 설정. URL 경로와 컨트롤러 메서드를 매핑.
+`@GetMapping`, `@PostMapping`: HTTP 메서드에 따른 요청을 처리.
+
+DIP
+controller가 service에 의존하고, service가 repository에 의존하는건 전통적인 방식임.
+여기서 repository를 인터페이스로 만들어 의존성 역전이 일어나게 함.
+이러면 repository의 구현체가 바뀌어도(JpaRepository) service코드는 안바꿔도 됨.
