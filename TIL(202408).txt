@@ -279,3 +279,17 @@ DIP
 controller가 service에 의존하고, service가 repository에 의존하는건 전통적인 방식임.
 여기서 repository를 인터페이스로 만들어 의존성 역전이 일어나게 함.
 이러면 repository의 구현체가 바뀌어도(JpaRepository) service코드는 안바꿔도 됨.
+
+8/23(금)
+row가 가로줄, column이 세로줄
+row는 한줄씩 위에서 아래로, column은 한줄씩 왼쪽에서 오른쪽으로
+
+기본키가 필요한 이유
+데이터베이스가 각 엔티티들을 구별할 때 쓰임.
+또 엔티티간의 관계도 정의할 수 있음 (외래키)
+
+JpaRepository
+Optional 클래스 - 값이 있을 수도 있고 없을 수도 있는 상황을 표현
+
+ controller는 service에서 정의된 메소드만 사용
+실질적으로 entity, service, repository에 접근할 수 있는건 service
