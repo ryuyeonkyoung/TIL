@@ -293,3 +293,27 @@ Optional 클래스 - 값이 있을 수도 있고 없을 수도 있는 상황을 
 
  controller는 service에서 정의된 메소드만 사용
 실질적으로 entity, service, repository에 접근할 수 있는건 service
+
+8/24(토)
+Stringtokenizer(String str) - 구분자 지정o. 구분자 저장x
+Stringtokenizer(String str, String delim) - 구분자 지정o, 구분자 저장x
+StringTokenizer(String str, String delim, boolean returnDelims) - 구분자 지정o, 구분자 저장o
+
+st.hasMoreTokens() >> !isEmpty 메소드
+
+Thymeleaf문법 iterStat
+<div th:if="${diaryStat.index == 0 or #temporals.format(diary.diaryCreatedTime, 'yyyyMMdd') != #temporals.format(diary.diaryCreatedTime, 'yyyyMMdd')}">
+      <span th:text="*{#temporals.format(diary.diaryCreatedTime, 'yyyy년 MM월 dd일')}"></span>
+</div>
+
+8/27(화)
+dao, vo 기본개념
+
+view의 반환
+return: 뷰 이름을 반환하며, 스프링 MVC가 해당 뷰를 렌더링합니다. 서버 내부에서 처리되며 URL은 변경되지 않습니다.
+forward: 서버 내부에서 요청을 다른 리소스(뷰)로 전달합니다. URL은 변경되지 않습니다.
+redirect: 클라이언트의 브라우저를 새로운 URL로 리다이렉트합니다. 브라우저의 URL이 변경됩니다.
+
+html에서 id와 name
+id: 고유해야 함, 각 html요소를 고유하게 식별하는데 사용
+name: 중복가능, 폼 데이터를 서버로 전송할 때 데이터를 식별하는데 사용
