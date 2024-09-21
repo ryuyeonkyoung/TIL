@@ -1,0 +1,42 @@
+9/2(월)
+최단 경로는 bfs로 풀어야함
+플로이드-워셜 알고리즘
+1. 연결된 지점은 거리가 1, 나와의 거리는 0, 나머지는 INF로 설정한다.
+2. 삼중 중첩문을 통해 중간에 경유하는 지점을 만들에서 세 지점을 거쳐가는 최솟값을 저장한다.
+for (int k = 1; k <= N; k++) {
+    for (int i = 1; i <= N; i++) {
+        for (int j = 1; j <= N; j++) {
+            if (dist[i][k] < INF && dist[k][j] < INF) {
+                dist[i][j] = Math.min(dist[i][j], dist[i][k] + dist[k][j]);
+            }
+        }
+    }
+}
+
+9/18 (수)
+REST API
+클라이언트와 서버가 URL을 통해 정보를 주고받는다.
+HTTP 프로토콜을 기반으로 동작한다.
+
+SQL 기본 문법 (프로그래머스로 연습)
+GROUP BY, JOIN ON, ORDER BY
+
+9/21 (토)
+Servlet의 개념
+Servlet : 서버에서 동작하는 프로그램. client에서 들어온 요청을 처리하고 응답을 생성
+DTO : 서버간의 데이터 교환을 위한 객체
+Json : client와 server간 통신하기 위한 데이터 형식
+(DTO와 상응되는 개념은 Json파일)
+
+Sprig Framework의 발전 흐름
+1. Servlet
+- Client와 Server가 통신을 처리하는 프로그램.  요청을 받아서 동적으로 응답을 생성.
+2. Servlet + JSP 
+- 동적인 웹 콘텐츠를 생산하는 조합.
+- BUT 비즈니스 로직과 프레젠테이션 로직이 섞여서 코드가 복잡해지고 유지보수성이 떨어짐.
+- 코드가 복잡해지고, 유지보수성이 떨어짐
+3. Spring Framework (MVC구조)
+- 비즈니스 로직과 프레젠테이션 로직을 분리하기 위해  사용.
+4. RESTful 웹 서비스 지원
+- 현대의 웹 개발에서 RESTful API의 중요성이 커지면서, RESTful 웹 서비스 개발을 위한 다양한 기능을 제공
+
