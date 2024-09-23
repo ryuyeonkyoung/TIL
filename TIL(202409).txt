@@ -40,3 +40,11 @@ Sprig Framework의 발전 흐름
 4. RESTful 웹 서비스 지원
 - 현대의 웹 개발에서 RESTful API의 중요성이 커지면서, RESTful 웹 서비스 개발을 위한 다양한 기능을 제공
 
+9/23(월)
+MVC구조 - Model
+1. 도메인 클래스 - 비즈니스 객체를 표현. 데이터베이스의 테이블과 대응
+EX) ENTITY, DTO
+2.  BO (Business Object) 클래스 - 비즈니스 로직을 구현
+EX) SERVICE
+3. Manager 클래스 - 비즈니스 로직을 관리
+4. DAO(Data Access Object) 클래스 - SQL 쿼리를 실행하며 데이터베이스에서 데이터를 조회,삽입,수정,삭제함
