@@ -48,3 +48,7 @@ EX) ENTITY, DTO
 EX) SERVICE
 3. Manager 클래스 - 비즈니스 로직을 관리
 4. DAO(Data Access Object) 클래스 - SQL 쿼리를 실행하며 데이터베이스에서 데이터를 조회,삽입,수정,삭제함
+
+9/29(일)
+JPA(Java Persistence API)
+자바 프로그램을 할 때 영구적으로 데이터를 저장하기 위해서 필요한 인터페이스
