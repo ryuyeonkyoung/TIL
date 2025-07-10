@@ -1,3 +1,13 @@
 
 - [How AI can make you an awesome developer #153056](https://github.com/orgs/community/discussions/153056)
 - [네이버 커넥트재단이 생각하는 AI 시대의 개발자](https://blog.naver.com/boostcamp_official/223834097896)
+- [SW개발자 채용 변화 전망과 생성형 AI](https://spri.kr/posts/view/23870?code=data_all&study_type=&board_type=research)
+  - 창의적 문제 해결 능력
+  - 협업 능력
+  - 타 분야와의 소통 능력
+  - AI 활용 능력
+  - 생성형 AI 결과물 검증 능력
+  - 개발 지원 도구 활용 능력
+  - 복잡한 문제 해결
+  - 네트워크 확장
+  - 도메인 지식
