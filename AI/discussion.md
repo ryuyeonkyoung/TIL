@@ -1,6 +1,10 @@
 
 - [How AI can make you an awesome developer #153056](https://github.com/orgs/community/discussions/153056)
 - [네이버 커넥트재단이 생각하는 AI 시대의 개발자](https://blog.naver.com/boostcamp_official/223834097896)
+  - 문제 해결력
+    - 맥락 속에서 문제를 정의하는 능력 (불명확한 요구사항 처리 및 문제 정의)
+    - 해결 방향 설계
+    - 동료와 함께할 수 있는 개발자
 - [SW개발자 채용 변화 전망과 생성형 AI](https://spri.kr/posts/view/23870?code=data_all&study_type=&board_type=research)
   - 창의적 문제 해결 능력
   - 협업 능력
