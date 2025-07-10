@@ -11,3 +11,8 @@
   - 복잡한 문제 해결
   - 네트워크 확장
   - 도메인 지식
+- [2023 카카오 공동체 기술윤리 보고서](https://t1.kakaocdn.net/kakaocorp/kakaocorp/admin/esg/report/2023_Kakao_TechEthicsReport.pdf)
+- [카카오 그룹의 책임 있는 AI를 위한 가이드라인](https://www.kakaocorp.com/page/responsible/detail/guidelinesForResponsibleAI)
+  - 안정성을 최우선으로 삼는 AI
+  - AI 윤리
+  - 오픈 AI(gpt)와 같은 철학 공유
