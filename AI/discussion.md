@@ -20,3 +20,16 @@
   - 안정성을 최우선으로 삼는 AI
   - AI 윤리
   - 오픈 AI(gpt)와 같은 철학 공유
+- [Ask HN: SWEs how do you future-proof your career in light of LLMs?](https://news.ycombinator.com/item?id=42431103)
+  - 2025.01 기준
+  - 보일러 플레이트 코드 대체
+  - 테스트 대체
+  - m_ke(Michal Wolski) - 시니어 딥 러닝 엔지니어
+    - michal.io : (https://michal.io/) : 연구·시스템·컴파일러 중심 블로그
+      - 현재 시점에서 논문·프로토타입·IDE 기능(Agent Mode)로 일부 구현
+    - Synthetic Fine-tune
+      1) Pre-train
+      2) Synthetic Fine-tune → Parser·AST 변형·컴파일·유닛테스트로 ‘자동 라벨’ 대량 생성
+      3) Value-Function distill → 즉시형 보상으로 RL 가속
+      4) Mass sampling + 검증 → 최적 코드 선택
+    - AST-diff → copilot agent
