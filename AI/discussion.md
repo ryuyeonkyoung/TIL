@@ -32,7 +32,7 @@
   - 테스트 대체
   - m_ke(Michal Wolski) - 시니어 딥 러닝 엔지니어
     - michal.io : (https://michal.io/) : 연구·시스템·컴파일러 중심 블로그
-      - 현재 시점에서 논문·프로토타입·IDE 기능(Agent Mode)로 일부 구현
+      - 현재 시점에서 논문·프로토타입·IDE 기능(Agent Mode)로 일부 구현 (직접x 업계 동향o)
     - Synthetic Fine-tune
       1) Pre-train
       2) Synthetic Fine-tune → Parser·AST 변형·컴파일·유닛테스트로 ‘자동 라벨’ 대량 생성
