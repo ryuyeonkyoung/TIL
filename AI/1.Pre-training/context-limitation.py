@@ -1,3 +1,4 @@
+# 이해를 돕기 위한 예시 코드
 class LLM:
     def __init__(self, model_weights, context_window=4096):
         self.weights = model_weights

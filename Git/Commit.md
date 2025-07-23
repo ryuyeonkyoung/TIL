@@ -39,5 +39,5 @@ Footer
 7. 본문은 어떻게보다 무엇을, 왜에 맞춰 작성한다.
 
 ## 참고자료
-- https://blog.munilive.com/posts/my-git-commit-guide.html
-  https://meetup.nhncloud.com/posts/106
+- [Git Commit Message Style Guide - 개인/팀을 위한 커밋 메시지 스타일 가이드](https://blog.munilive.com/posts/my-git-commit-guide.html)
+- [좋은 git 커밋 메시지를 작성하기 위한 7가지 약속](https://meetup.nhncloud.com/posts/106)

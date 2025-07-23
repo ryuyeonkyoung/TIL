@@ -125,11 +125,14 @@
 
 #### 2NF 적용 후
 **학생 테이블:**
+
 | Student_ID | Student_Name |
 | --- | --- |
 | 1 | Alice |
 | 2 | Bob |
+
 **과목 테이블:**
+
 | Course_ID | Course_Name |
 | --- | --- |
 | 101 | Math |
@@ -153,6 +156,7 @@
 | --- | --- | --- |
 | 1 | Alice | 10 |
 | 2 | Bob | 20 |
+
 **부서 테이블:**
 | Dept_ID | Dept_Name |
 | --- | --- |
@@ -166,6 +170,7 @@
 
 #### BCNF 위반 테이블
 - {Student_ID, Course_ID}가 기본 키지만, 교수는 과목에 의해 결정
+
 | Student_ID | Course_ID | Professor |
 | --- | --- | --- |
 | 1 | 101 | Dr. Smith |
@@ -173,11 +178,14 @@
 
 #### BCNF 적용 후
 **학생-과목 테이블:**
+
 | Student_ID | Course_ID |
 | --- | --- |
 | 1 | 101 |
 | 2 | 102 |
+
 **과목-교수 테이블:**
+
 | Course_ID | Professor |
 | --- | --- |
 | 101 | Dr. Smith |
@@ -190,6 +198,7 @@
 
 #### 4NF 위반 테이블
 - 한 학생이 여러 과목을 듣고, 여러 동아리에 소속될 수 있음
+
 | Student_ID | Subject | Club |
 | --- | --- | --- |
 | 1 | Math | Drama |
@@ -200,11 +209,14 @@
 
 #### 4NF 적용 후
 **학생-과목 테이블:**
+
 | Student_ID | Subject |
 | --- | --- |
 | 1 | Math |
 | 1 | Science |
+
 **학생-동아리 테이블:**
+
 | Student_ID | Club |
 | --- | --- |
 | 1 | Drama |
@@ -217,6 +229,7 @@
 
 #### 5NF 위반 테이블
 - 강의가 교수, 과목, 시간표 각각에 종속되지만 이들이 독립적으로 관리될 경우
+
 | Professor | Subject | Time |
 | --- | --- | --- |
 | Dr. A | Math | Mon 9AM |
