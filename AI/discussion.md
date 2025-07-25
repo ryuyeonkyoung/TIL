@@ -1,4 +1,3 @@
-
 - [How AI can make you an awesome developer #153056](https://github.com/orgs/community/discussions/153056)
 - [네이버 커넥트재단이 생각하는 AI 시대의 개발자](https://blog.naver.com/boostcamp_official/223834097896)
   - 인공지능 시대 인간의 경쟁력
@@ -30,12 +29,17 @@
   - 2025.01 기준
   - 보일러 플레이트 코드 대체
   - 테스트 대체
-  - m_ke(Michal Wolski) - 시니어 딥 러닝 엔지니어
-    - michal.io : (https://michal.io/) : 연구·시스템·컴파일러 중심 블로그
-      - 현재 시점에서 논문·프로토타입·IDE 기능(Agent Mode)로 일부 구현 (직접x 업계 동향o)
-    - Synthetic Fine-tune
-      1) Pre-train
-      2) Synthetic Fine-tune → Parser·AST 변형·컴파일·유닛테스트로 ‘자동 라벨’ 대량 생성
-      3) Value-Function distill → 즉시형 보상으로 RL 가속
-      4) Mass sampling + 검증 → 최적 코드 선택
-    - AST-diff → copilot agent
+  - Synthetic Fine-tune
+    1) Pre-train
+    2) Synthetic Fine-tune → Parser·AST 변형·컴파일·유닛테스트로 ‘자동 라벨’ 대량 생성
+    3) Value-Function distill → 즉시형 보상으로 RL 가속
+    4) Mass sampling + 검증 → 최적 코드 선택
+  - AST-diff → copilot agent
+- [How AI Has Transformed the Role of Software Developers](https://builtin.com/articles/ai-transformed-role-software-developers)
+  - AI가 생성한 테스트 검토 필요
+  - 다양한 테스트 케이스들을 고려해 주지만, 중요한 테스트 코드를 포함했는지 확인해야 한다.
+  ```
+  In another case, a back-end team used Diffblue to generate Java unit tests.
+  Coverage jumped. But many tests didn’t catch critical logic failures.
+  The team adjusted: every AI-written test had to be understandable, tied to business rules, and reviewed by someone with domain knowledge. 
+  ```
